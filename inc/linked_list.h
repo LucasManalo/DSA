@@ -29,5 +29,4 @@ void reverse_list(LinkedList* list);
 void print_list(LinkedList* list, void (*print_func)(void*));
 void free_list(LinkedList* list);
 
-
 #endif // __LINKED_LIST_H__

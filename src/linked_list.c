@@ -55,7 +55,7 @@ void remove_node(LinkedList* list, int index) {
     // Check bounds of list
     if(index >= list->size) {
         fprintf(stderr, "Index out of bounds\n");
-        return NULL;
+        return;
     }
 
     // Find node of list

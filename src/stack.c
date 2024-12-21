@@ -9,12 +9,14 @@ void push(Stack* stack, void* data) {
     node->data = data;
     node->next = stack->top;
     stack->top = node;
+    stack->size += 1;
 }
 
 sNode* pop(Stack* stack){
     sNode* node = stack->top;
     stack->top = node->next;
     node->next = NULL;
+    stack->size -= 1;
     return node;
 }
 
